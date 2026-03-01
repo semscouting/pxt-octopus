@@ -1,13 +1,11 @@
 # octopus
 
-Starter unified MakeCode extension for ELECFREAKS Octopus modules.
+Unified MakeCode extension for **Octopus modules only**.
 
-Current groups:
-- Sensors
-- Actuators
-- Sound
+Included block groups:
+- Octopus Sensors
+- Octopus Actuators
 
-Next steps:
-- Merge APIs from pxt-octopus, pxt-iot-environment-kit, pxt-smarthome, pxt-tinkercademy-tinker-kit
-- Add i2c modules (OLED, RTC, color)
-- Add localization strings
+Not included:
+- generic music helpers
+- non-Octopus utility blocks

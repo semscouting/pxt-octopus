@@ -1,30 +1,30 @@
 namespace octopus {
-    //% block="light sensor at pin %pin"
-    //% group="Sensors" weight=100
-    export function light(pin: AnalogPin): number {
+    //% block="Octopus light sensor at %pin"
+    //% group="Octopus Sensors" weight=100
+    export function lightSensor(pin: AnalogPin): number {
         return pins.analogReadPin(pin)
     }
 
-    //% block="trimpot at pin %pin"
-    //% group="Sensors" weight=99
+    //% block="Octopus trimpot at %pin"
+    //% group="Octopus Sensors" weight=99
     export function trimpot(pin: AnalogPin): number {
         return pins.analogReadPin(pin)
     }
 
-    //% block="PIR motion at pin %pin"
-    //% group="Sensors" weight=98
-    export function pir(pin: DigitalPin): boolean {
+    //% block="Octopus PIR motion at %pin"
+    //% group="Octopus Sensors" weight=98
+    export function pirMotion(pin: DigitalPin): boolean {
         return pins.digitalReadPin(pin) == 1
     }
 
-    //% block="button at pin %pin is pressed"
-    //% group="Sensors" weight=97
+    //% block="Octopus button at %pin pressed"
+    //% group="Octopus Sensors" weight=97
     export function buttonPressed(pin: DigitalPin): boolean {
         return pins.digitalReadPin(pin) == 0
     }
 
-    //% block="ultrasonic trig %trig|echo %echo"
-    //% group="Sensors" weight=96
+    //% block="Octopus ultrasonic trig %trig|echo %echo (cm)"
+    //% group="Octopus Sensors" weight=96
     export function ultrasonicCm(trig: DigitalPin, echo: DigitalPin): number {
         pins.setPull(echo, PinPullMode.PullNone)
         pins.digitalWritePin(trig, 0)
