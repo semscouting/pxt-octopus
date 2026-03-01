@@ -1,0 +1,23 @@
+{
+  "name": "octopus",
+  "version": "0.0.1",
+  "description": "Unified ELECFREAKS Octopus extension for micro:bit",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts",
+    "sensors.ts",
+    "actuators.ts",
+    "music.ts",
+    "README.md"
+  ],
+  "testFiles": [
+    "test.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
