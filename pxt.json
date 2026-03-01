@@ -10,8 +10,7 @@
     "main.ts",
     "sensors.ts",
     "actuators.ts",
-    "music.ts",
-    "README.md"
+    "music.ts"
   ],
   "testFiles": [
     "test.ts"

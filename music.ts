@@ -1,7 +1,7 @@
 namespace octopus {
-    //% block="play tone %freq Hz for %ms ms on pin %pin"
+    //% block="play tone %freq Hz for %ms ms"
     //% group="Sound" weight=80
-    export function tone(freq: number, ms: number, pin: AnalogPin = AnalogPin.P0): void {
+    export function tone(freq: number, ms: number): void {
         music.playTone(freq, ms)
     }
 
@@ -14,6 +14,6 @@ namespace octopus {
     //% block="play sad melody"
     //% group="Sound" weight=78
     export function melodySad(): void {
-        music.startMelody("E D C -", MelodyOptions.Once)
+        music.playMelody("E D C -", 120)
     }
 }
